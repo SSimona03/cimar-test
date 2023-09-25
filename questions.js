@@ -103,7 +103,7 @@ setTimeout(() => {  for(let i =0; i<26; i++){
   for(let i =0; i<str.length; i++){
     if(str[i] !== " "){
       //replacing the letter with it's caps
-   let change =   newString.replace(newString[i], newString[i].toUpperCase())
+   let change =   newString.replace(0, newString[i].toUpperCase())
      string.push(change)
     }
     newString = str;
