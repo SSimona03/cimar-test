@@ -96,17 +96,16 @@ setTimeout(() => {  for(let i =0; i<26; i++){
 
   //code challendge
   function Wave(str){
-    //I make a new string because I want to revert back to original after each iteration
-  let newString = str;
+   
   //capture the output
   let string = []
   for(let i =0; i<str.length; i++){
     if(str[i] !== " "){
       //replacing the letter with it's caps
-   let change =   newString.replace(0, newString[i].toUpperCase())
+   let change =   str.replace(0, str[i].toUpperCase())
      string.push(change)
     }
-    newString = str;
+   
     
   }
   return string
